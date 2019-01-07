@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/maybeFragment"
+        android:layout_width="199dp"
+        android:layout_height="567dp"
+        android:background="#013A55"
+        android:orientation="vertical"
+        android:translationX="-204dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/layHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/eye_menu_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="50dp"
+            android:src="@drawable/knowledge_img"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="30dp" />
+
+        <TextView
+            android:id="@+id/take_a_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:text="Take a look"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:textStyle="normal|bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="14sp"
+            android:maxLines="1"
+            android:shadowColor="#4726ca"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text=""
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/homeBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bttn_menu_background"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textColor="#5A6B95"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/orarBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bttn_menu_background"
+            android:text="Orar"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/universityBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bttn_menu_background"
+
+            android:text="University"
+            android:textAllCaps="false"
+            android:textColor="#5A6B95"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/groupBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bttn_menu_background"
+            android:text="Chat"
+            android:textAllCaps="false"
+            android:textColor="#5A6B95"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/gradesBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/bttn_menu_background"
+            android:text="Grades"
+            android:textAllCaps="false"
+            android:textColor="#5A6B95"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/logOutBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bttn_menu_background"
+            android:text="Log out"
+            android:textAllCaps="false"
+            android:textColor="#5A6B95"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layHeader"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="451dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+
+            android:id="@+id/menuBttnSwipe"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="306dp"
+            android:background="@drawable/menubackground"
+            android:visibility="visible"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+            android:id="@+id/orarText"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_below="@+id/menuBttnSwipe"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+
+            android:background="@drawable/header_blue"
+            android:gravity="center"
+            android:shadowColor="#443dd8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="38"
+            android:text="\n Orar\n"
+            android:textColor="#FFF"
+            android:textSize="26dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/luniMerge"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/choose_day_back"
+        android:orientation="vertical"
+        android:translationX="-0dp"
+        app:layout_constraintBottom_toTopOf="@+id/martiMerge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchLay">
+
+        <TextView
+            android:id="@+id/luniGo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:paddingRight="0dp"
+            android:text="Luni"
+            android:shadowColor="#443dd8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/luniScroll"
+
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orarZiHeader"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF"
+        android:scrollbars="none"
+        android:translationX="-380dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/martiMerge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchLay">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/ora8L"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text="14:00-15:40\nBazRobo, C\nVIII11\nMaceseanu_G"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora10L"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora12L"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora14L"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora16L"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora18L"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora20L"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/martiScroll"
+
+
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orarZiHeader"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF"
+        android:scrollbars="none"
+        android:textAlignment="center"
+        android:translationX="-380dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/miercuriMerge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luniScroll">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ora8M"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text="14:00-15:40\nBazRobo, C\nVIII11\nMaceseanu_G"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora10M"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora12M"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora14M"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora16M"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora18M"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora20M"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/martiMerge"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/choose_day_back"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/miercuriMerge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luniMerge">
+
+        <TextView
+            android:id="@+id/martiGo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:paddingRight="0dp"
+            android:text="Marti"
+            android:textAlignment="center"
+            android:shadowColor="#443dd8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:textColor="#FFF"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/miercuriScroll"
+
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orarZiHeader"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="6dp"
+        android:background="#FFF"
+        android:scrollbars="none"
+        android:textAlignment="center"
+        android:translationX="-380dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/joiMerge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/martiScroll">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ora8MI"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text="14:00-15:40\nBazRobo, C\nVIII11\nMaceseanu_G"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora10MI"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora12MI"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora14MI"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora16MI"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora18MI"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora20MI"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/miercuriMerge"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/choose_day_back"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/joiMerge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/martiMerge">
+
+        <TextView
+            android:id="@+id/miercuriGo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:paddingRight="0dp"
+            android:text="Miercuri"
+            android:textAlignment="center"
+            android:shadowColor="#443dd8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:textColor="#FFF"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/joiScroll"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/orarZiHeader"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFF"
+        android:scrollbars="none"
+        android:textAlignment="center"
+        android:translationX="-380dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/vineriMerge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miercuriMerge">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ora8J"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text="14:00-15:40\nBazRobo, C\nVIII11\nMaceseanu_G"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora10J"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora12J"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora14J"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora16J"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora18J"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ora20J"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/joiMerge"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/choose_day_back"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/vineriMerge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miercuriMerge">
+
+        <TextView
+            android:id="@+id/joiGo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:paddingRight="0dp"
+            android:text="Joi"
+            android:textAlignment="center"
+            android:shadowColor="#443dd8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:textColor="#FFF"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/vineriScroll"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/orarZiHeader"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFF"
+        android:scrollbars="none"
+        android:textAlignment="center"
+        android:translationX="-380dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joiMerge">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/orar8V"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text="14:00-15:40\nBazRobo, C\nVIII11\nMaceseanu_G"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orar10V"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orar12V"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orar14V"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orar16V"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orar18V"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/orar20V"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_back_for_orar"
+                android:padding="2dp"
+                android:shadowColor="#000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text=""
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/vineriMerge"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/choose_day_back"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joiMerge">
+
+        <TextView
+            android:id="@+id/vineriGo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:paddingRight="0dp"
+            android:text="Vineri"
+            android:textAlignment="center"
+            android:shadowColor="#443dd8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:textColor="#FFF"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/searchLay"
+        android:layout_width="390dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layHeader">
+
+
+        <Spinner
+            android:id="@+id/spinnerSpec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="25dp"></Spinner>
+
+        <Spinner
+            android:id="@+id/spinnerAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"></Spinner>
+
+        <Spinner
+            android:id="@+id/spinnerSapt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"></Spinner>
+
+        <Button
+            android:id="@+id/searchBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/bttn_menu_background"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="#5A6B95"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

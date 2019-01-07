@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/closeSrc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/close_img"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/searchLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orarText"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <TextView
+        android:id="@+id/orarText"
+        android:layout_width="386dp"
+        android:layout_height="87dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/header_blue"
+        android:gravity="center"
+        android:shadowColor="#443dd8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="38"
+        android:text="\n Group\n"
+        android:textColor="#FFF"
+        android:textSize="26dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="368dp"
+        android:layout_height="313dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchLayout">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/persContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="135dp">
+
+                <ImageView
+                    android:id="@+id/studMaleImage1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="298dp"
+                    app:srcCompat="@drawable/student_male" />
+
+                <TextView
+
+                    android:id="@+id/personName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Savulescu Cristian"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lastSentMsg1"
+                    android:layout_width="268dp"
+                    android:layout_height="21dp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="79dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="18dp"
+                    android:inputType="textShortMessage"
+                    android:text="You:\tSalut, am vazut ce ai lucrat la proiect si e super tare !"
+                    android:textDirection="firstStrongLtr"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/timeLastMsg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="13dp"
+                    android:text="11:00 PM"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/persContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="135dp">
+
+                <ImageView
+                    android:id="@+id/studMaleImage2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="298dp"
+                    app:srcCompat="@drawable/student_female" />
+
+                <TextView
+
+                    android:id="@+id/personName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/studMaleImage2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:text="Noemi Noncsi"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lastSentMsg2"
+                    android:layout_width="268dp"
+                    android:layout_height="21dp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="79dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="18dp"
+                    android:inputType="textShortMessage"
+                    android:text="You:\tSalut, am vazut ce ai lucrat la proiect si e super tare !"
+                    android:textDirection="firstStrongLtr"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/timeLastMsg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="13dp"
+                    android:text="11:00 PM"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/persContainer3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="135dp">
+
+                <ImageView
+                    android:id="@+id/studMaleImage3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="298dp"
+                    app:srcCompat="@drawable/prof_male" />
+
+                <TextView
+
+                    android:id="@+id/personName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignStart="@+id/studMaleImage3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="113dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="96dp"
+                    android:text="Prof.dr.ing. Moraru Sorin"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lastSentMsg3"
+                    android:layout_width="268dp"
+                    android:layout_height="21dp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="79dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="18dp"
+                    android:inputType="textShortMessage"
+                    android:text="You:\tSalut, am vazut ce ai lucrat la proiect si e super tare !"
+                    android:textDirection="firstStrongLtr"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/timeLastMsg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="13dp"
+                    android:text="11:00 PM"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/persContainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="135dp">
+
+                <ImageView
+                    android:id="@+id/studMaleImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="298dp"
+                    app:srcCompat="@drawable/prof_female" />
+
+                <TextView
+
+                    android:id="@+id/personName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/studMaleImage"
+                    android:layout_alignTop="@+id/studMaleImage"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="79dp"
+                    android:text="Prof.dr.ing. Ungureanu Delia"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lastSentMsg"
+                    android:layout_width="268dp"
+                    android:layout_height="21dp"
+                    android:layout_alignBottom="@+id/studMaleImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="79dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="18dp"
+                    android:inputType="textShortMessage"
+                    android:text="You:\tSalut, am vazut ce ai lucrat la proiect si e super tare !"
+                    android:textDirection="firstStrongLtr"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/timeLastMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="13dp"
+                    android:text="11:00 PM"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orarText"
+        app:layout_constraintVertical_bias="0.060000002">
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@null"
+            app:backgroundTint="#3D0AD7" />
+
+
+        <Button
+            android:id="@+id/searchBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/bttn_menu_background"
+
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="#5A6B95"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

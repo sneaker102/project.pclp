@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFireBase">
+
+    <ImageView
+        android:id="@+id/eye_menu_view"
+        android:layout_width="236dp"
+        android:layout_height="127dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/eye_blue"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toTopOf="@+id/inputMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/conBttn"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="80dp"
+
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="50dp"
+        android:background="#3a3fe7"
+        android:text=" Log In "
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPass"
+
+        />
+
+    <EditText
+        android:id="@+id/inputMail"
+        android:layout_width="255dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="44dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@null"
+        app:backgroundTint="#3D0AD7"
+        app:layout_constraintBottom_toTopOf="@+id/inputPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputPass"
+        android:layout_width="255dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="52dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null"
+        app:backgroundTint="#3D0AD7"
+        app:layout_constraintBottom_toTopOf="@+id/conBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputMail" />
+
+    <CheckBox
+        android:id="@+id/saveEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="33dp"
+        android:buttonTint="#3D0AD7"
+        android:text="Remember Account"
+        app:layout_constraintBottom_toTopOf="@+id/conBttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/forgotPass"
+        app:layout_constraintTop_toBottomOf="@+id/inputPass" />
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="33dp"
+        android:clickable="true"
+        android:shadowColor="#000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="2"
+        android:text="Forgot password?"
+        android:textColor="@color/design_default_color_primary"
+        app:layout_constraintBottom_toTopOf="@+id/conBttn"
+        app:layout_constraintEnd_toStartOf="@+id/saveEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPass" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="18dp"
+        android:shadowColor="#4726ca"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15"
+
+        android:text="STelper"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/inputMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eye_menu_view"
+        app:layout_constraintVertical_bias="0.863" />
+
+</android.support.constraint.ConstraintLayout>

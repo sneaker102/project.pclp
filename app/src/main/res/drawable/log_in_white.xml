@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners
+        android:topLeftRadius="250dp"
+        android:topRightRadius="250dp"
+        android:bottomRightRadius="250dp"
+        android:bottomLeftRadius="250dp">
+    </corners>
+    <stroke
+        android:width="15dp"
+        android:color="#0000ff">
+    </stroke>
+    <solid
+        android:text="Log in"
+        android:color="#fefefe">
+    </solid>
+</shape>
